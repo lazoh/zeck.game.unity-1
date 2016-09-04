@@ -20,8 +20,8 @@ public class scorekeeping : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		timeleft.text = "Time remaining: " + score.ToString () + "s";
 		if (score == 0)
+			player.killplayer();
 	}
 
 	void reloadTimeLeft(){
