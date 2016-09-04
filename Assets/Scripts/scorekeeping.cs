@@ -14,7 +14,7 @@ public class scorekeeping : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		player = FindObjectOfType<playercontroller> ();
-		timeleft.text = "Time left: " + score.ToString () + "s";
+		timeleft.text = "Time remaining: " + score.ToString () + "s";
 		InvokeRepeating ("scorekeeper", 1, 1);
 	}
 	
@@ -27,7 +27,7 @@ public class scorekeeping : MonoBehaviour {
 	void scorekeeper(){
 		score -= 1;
 		Debug.Log ("Score: " + score);
-		timeleft.text = "Time left: " + score.ToString () + "s";
+		timeleft.text = "Time remaining: " + score.ToString () + "s";
 		endscore += 4;
 	}
 }

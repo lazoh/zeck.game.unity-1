@@ -248,8 +248,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.010000001, y: 1}
   m_AnchorMax: {x: 0.010000001, y: 1}
-  m_AnchoredPosition: {x: 80, y: -24}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 124, y: -24}
+  m_SizeDelta: {x: 248, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &171931531
 MonoBehaviour:
@@ -283,7 +283,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Time Left: 60s'
+  m_Text: 'Time Remaining: 60'
 --- !u!222 &171931532
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -651,7 +651,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &681513181
 Transform:
   m_ObjectHideFlags: 0
@@ -1725,6 +1725,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 5433088, guid: 9a41f12344abaa746a951abbb22a3dd1, type: 2}
       propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 193310, guid: 9a41f12344abaa746a951abbb22a3dd1, type: 2}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
