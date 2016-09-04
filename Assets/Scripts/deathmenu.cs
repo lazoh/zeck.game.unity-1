@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class deathmenu : MonoBehaviour {
 
@@ -23,13 +24,13 @@ public class deathmenu : MonoBehaviour {
 	// Use this for initialization
 	public void RestartGame() {
 		DeathMenu.SetActive (false);
-		Application.LoadLevel(Application.loadedLevel);
+		SceneManager.LoadScene(Application.loadedLevel);
 		StartCoroutine (unfreezeall ());
 	}
 	
 	public void GotoMainMenu(){
 		DeathMenu.SetActive (false);
-		Application.LoadLevel("MainMenu");
+		SceneManager.LoadScene("MainMenu");
 	}
 
 	public IEnumerator unfreezeall(){
